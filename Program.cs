@@ -11,16 +11,22 @@ public abstract class Device
         Characteristics = characteristics;
     }
 
-    public abstract void Sound();
-    public void Show()
+    public virtual void Sound()
+    {
+        Console.WriteLine("Default device sound");
+    }
+
+    public virtual void Show()
     {
         Console.WriteLine($"Device Name: {Name}");
     }
-    public void Desc()
+
+    public virtual void Desc()
     {
         Console.WriteLine($"Description: {Characteristics}");
     }
 }
+
 
 public class Kettle : Device
 {
