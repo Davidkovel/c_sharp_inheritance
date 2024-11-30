@@ -84,7 +84,7 @@ class Program
             new RightTriangle(5, 6),
             new Trapezoid(3, 5, 4)
         };
-
+        // Polymorphism
         foreach (var figure in figures)
         {
             Console.WriteLine($"Area of {figure.GetType().Name}: {figure.CalculateArea()}");
